@@ -132,7 +132,7 @@ function Portfolio() {
                         alt={item.title}
                         className="object-cover w-full h-full transition-transform duration-300 "
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-ink/20 to-transparent"></div>
+                      <div className="absolute inset-0 bg-linear-to-t from-ink/20 to-transparent"></div>
                     </div>
                   </div>
 
@@ -162,7 +162,7 @@ function Portfolio() {
                       <ul className="space-y-2">
                         {item.details.map((detail, i) => (
                           <li key={i} className="flex items-start">
-                            <span className="inline-block w-1.5 h-1.5 bg-ink rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span className="inline-block w-1.5 h-1.5 bg-ink rounded-full mt-2 mr-3 shrink-0"></span>
                             <span className="text-ink/90">{detail}</span>
                           </li>
                         ))}

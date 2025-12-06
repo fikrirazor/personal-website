@@ -1,5 +1,5 @@
 function Experience() {
-  const workHistory = [
+  const experienceItems = [
     {
       title: "Self Employed",
       company: "JAMAIR GAMES",
@@ -40,24 +40,26 @@ function Experience() {
                   Work History
                 </h2>
 
-                {workHistory.map((job, index) => (
-                  <div key={index} className="space-y-1">
+                {experienceItems.map((item) => (
+                  <div key={item.company} className="space-y-1">
                     <h3 className="text-xl font-semibold">
                       <span className="inline-block px-3 py-1 bg-ink text-cream-light">
-                        {job.title}
+                        {item.title}
                       </span>{" "}
-                      — {job.company}
+                      — {item.company}
                     </h3>
-                    <p className="text-sm italic">{job.timeline}</p>
+                    <p className="text-sm italic">{item.timeline}</p>
 
-                    <ul className="list-disc list-inside mt-2 space-y-1">
+                    <div>
                       <h4 className="text-lg font-semibold mb-3">
                         Responsibility:
                       </h4>
-                      {job.responsibilities.map((task, i) => (
-                        <li key={i}>{task}</li>
-                      ))}
-                    </ul>
+                      <ul className="list-disc list-inside mt-2 space-y-1">
+                        {item.responsibilities.map((task) => (
+                          <li key={task}>{task}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 ))}
               </div>

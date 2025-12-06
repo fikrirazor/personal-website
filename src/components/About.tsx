@@ -1,7 +1,7 @@
 import SparkleDivider from "@/components/ui/SparkleDivider";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
-const coreValues = [
+const keyValues = [
   {
     title: "Continuous Learning",
     desc: "keep learning new technologies, frameworks, and reading about new technologies.",
@@ -59,7 +59,7 @@ function About() {
 
           {/* Responsive Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-25 max-w-screen-2xl mx-auto">
-            {coreValues.map((item, i) => (
+            {keyValues.map((item, i) => (
               <div
                 key={i}
                 className="border bg-cream-light text-ink rounded-xl overflow-hidden hover:shadow-lg hover:shadow-clay-rose transition shadow-sm"

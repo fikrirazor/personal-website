@@ -1,12 +1,17 @@
+// src/components/contact/ContactForm.tsx
+import React from 'react';
+
 function ContactForm() {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
   };
+
   return (
     <>
       <div className="mt-12 max-w-4xl mx-auto px-4">
-        <div className="max-w-2xs mx-auto px-4 py-2 rounded-tl-lg  rounded-br-lg border-1 border border-cream-light">
-          <h3 className="text-center text-xl   ">Send Me A Message</h3>
+        <div className="max-w-2xs mx-auto px-4 py-2 rounded-tl-lg rounded-br-lg border-1 border border-cream-light">
+          <h3 className="text-center text-xl">Send Me A Message</h3>
         </div>
         <form
           onSubmit={handleSubmit}
@@ -19,34 +24,31 @@ function ContactForm() {
               id="name"
               name="name"
               className="
-      peer w-full rounded 
-      border border-ink 
-      bg-cream-light 
-      py-2 px-3 text-base text-ink 
-      placeholder-transparent outline-none 
-      transition-all
-
-      focus:border-clay-rose 
-      focus:bg-peach-milk 
-      focus:ring-2 focus:ring-clay-rose
-    "
+                peer w-full rounded 
+                border border-ink 
+                bg-cream-light 
+                py-2 px-3 text-base text-ink 
+                placeholder-transparent outline-none 
+                transition-all
+                focus:border-clay-rose 
+                focus:bg-peach-milk 
+                focus:ring-2 focus:ring-clay-rose
+              "
               placeholder="Name"
             />
             <label
               htmlFor="name"
               className="
-      absolute left-3 -top-5 
-      text-sm text-ink
-      transition-all
-      
-      peer-placeholder-shown:top-2
-      peer-placeholder-shown:text-gray-600
-      peer-placeholder-shown:text-base
-      
-      peer-focus:-top-5 
-      peer-focus:text-sm 
-      peer-focus:text-clay-rose
-    "
+                absolute left-3 -top-5 
+                text-sm text-ink
+                transition-all
+                peer-placeholder-shown:top-2
+                peer-placeholder-shown:text-gray-600
+                peer-placeholder-shown:text-base
+                peer-focus:-top-5 
+                peer-focus:text-sm 
+                peer-focus:text-clay-rose
+              "
             >
               Name
             </label>
@@ -59,34 +61,31 @@ function ContactForm() {
               id="email"
               name="email"
               className="
-      peer w-full rounded 
-      border border-ink 
-      bg-cream-light 
-      py-2 px-3 text-base text-ink 
-      placeholder-transparent 
-      outline-none transition-all
-
-      focus:border-clay-rose 
-      focus:bg-peach-milk 
-      focus:ring-2 focus:ring-clay-rose
-    "
+                peer w-full rounded 
+                border border-ink 
+                bg-cream-light 
+                py-2 px-3 text-base text-ink 
+                placeholder-transparent 
+                outline-none transition-all
+                focus:border-clay-rose 
+                focus:bg-peach-milk 
+                focus:ring-2 focus:ring-clay-rose
+              "
               placeholder="Email"
             />
             <label
               htmlFor="email"
               className="
-      absolute left-3 -top-5 
-      text-sm text-ink 
-      transition-all
-      
-      peer-placeholder-shown:top-2
-      peer-placeholder-shown:text-gray-600
-      peer-placeholder-shown:text-base
-      
-      peer-focus:-top-5 
-      peer-focus:text-sm 
-      peer-focus:text-clay-rose
-    "
+                absolute left-3 -top-5 
+                text-sm text-ink 
+                transition-all
+                peer-placeholder-shown:top-2
+                peer-placeholder-shown:text-gray-600
+                peer-placeholder-shown:text-base
+                peer-focus:-top-5 
+                peer-focus:text-sm 
+                peer-focus:text-clay-rose
+              "
             >
               Email
             </label>
@@ -98,34 +97,31 @@ function ContactForm() {
               id="message"
               name="message"
               className="
-      peer h-32 w-full resize-none rounded 
-      border border-ink 
-      bg-cream-light 
-      py-2 px-3 text-base text-ink 
-      placeholder-transparent 
-      outline-none transition-all
-
-      focus:border-clay-rose 
-      focus:bg-peach-milk 
-      focus:ring-2 focus:ring-clay-rose
-    "
+                peer h-32 w-full resize-none rounded 
+                border border-ink 
+                bg-cream-light 
+                py-2 px-3 text-base text-ink 
+                placeholder-transparent 
+                outline-none transition-all
+                focus:border-clay-rose 
+                focus:bg-peach-milk 
+                focus:ring-2 focus:ring-clay-rose
+              "
               placeholder="Message"
             ></textarea>
             <label
               htmlFor="message"
               className="
-      absolute left-3 -top-5 
-      text-sm text-ink 
-      transition-all
-      
-      peer-placeholder-shown:top-2
-      peer-placeholder-shown:text-gray-600
-      peer-placeholder-shown:text-base
-      
-      peer-focus:-top-5 
-      peer-focus:text-sm 
-      peer-focus:text-clay-rose
-    "
+                absolute left-3 -top-5 
+                text-sm text-ink 
+                transition-all
+                peer-placeholder-shown:top-2
+                peer-placeholder-shown:text-gray-600
+                peer-placeholder-shown:text-base
+                peer-focus:-top-5 
+                peer-focus:text-sm 
+                peer-focus:text-clay-rose
+              "
             >
               Message
             </label>

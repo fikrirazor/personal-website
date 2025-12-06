@@ -1,10 +1,30 @@
-import { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AnimatedContent = ({
+interface AnimatedContentProps extends React.HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode;
+  container?: Element | string | null;
+  distance?: number;
+  direction?: 'vertical' | 'horizontal';
+  reverse?: boolean;
+  duration?: number;
+  ease?: string;
+  initialOpacity?: number;
+  animateOpacity?: boolean;
+  scale?: number;
+  threshold?: number;
+  delay?: number;
+  disappearAfter?: number;
+  disappearDuration?: number;
+  disappearEase?: string;
+  onComplete?: () => void;
+  onDisappearanceComplete?: () => void;
+}
+
+const AnimatedContent: React.FC<AnimatedContentProps> = ({
   children,
   container,
   distance = 100,
@@ -25,13 +45,13 @@ const AnimatedContent = ({
   className = '',
   ...props
 }) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
-    let scrollerTarget = container || document.getElementById('snap-main-container') || null;
+    let scrollerTarget: Element | string | null = container || document.getElementById('snap-main-container') || null;
 
     if (typeof scrollerTarget === 'string') {
       scrollerTarget = document.querySelector(scrollerTarget);
@@ -77,7 +97,7 @@ const AnimatedContent = ({
 
     const st = ScrollTrigger.create({
       trigger: el,
-      scroller: scrollerTarget,
+      scroller: scrollerTarget || window,
       start: `top ${startPct}%`,
       once: true,
       onEnter: () => tl.play()
@@ -107,7 +127,7 @@ const AnimatedContent = ({
   ]);
 
   return (
-    <div ref={ref} className={className} style={{ visibility: 'hidden' }} {...props}>
+    <div ref={ref} className={`invisible ${className}`} {...props}>
       {children}
     </div>
   );

@@ -32,8 +32,8 @@ function Experience() {
             </h1>
           </div>
           <div className="lg:w-2/3">
-            <div className="relative my-20 hover:-left-1 hover:-top-1">
-              <div className="absolute -left-3 -top-3 bg-ink border-2 border-cream-light w-full h-full"></div>
+            <div className="relative my-20 group ">
+              <div className="absolute -left-3 -top-3 bg-ink border-2 border-cream-light w-full h-full group-hover:translate-x-1 group-hover:-translate-y-1"></div>
 
               <div className="relative bg-cream-light border-2 border-cream-light p-6 text-ink space-y-6 text-center">
                 <h2 className="text-2xl font-bold inline-block px-3 py-1 bg-ink text-cream-light mb-4">

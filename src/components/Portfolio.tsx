@@ -52,7 +52,7 @@ function Portfolio() {
         "Deployed with Vercel.",
       ],
       image: "/images/my-portfolio.jpg",
-      url: "fikri-rozan.vercel.app",
+      url: "https://fikri-rozan.vercel.app",
       tech: ["Next.JS", "Tailwind CSS", "Deployment", "Vercel"],
     },
     {

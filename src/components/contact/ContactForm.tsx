@@ -1,12 +1,7 @@
 // src/components/contact/ContactForm.tsx
-import React from 'react';
+
 
 function ContactForm() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-  };
-
   return (
     <>
       <div className="mt-12 max-w-4xl mx-auto px-4">
@@ -14,7 +9,7 @@ function ContactForm() {
           <h3 className="text-center text-xl">Send Me A Message</h3>
         </div>
         <form
-          onSubmit={handleSubmit}
+          
           className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10"
         >
           {/* Name */}

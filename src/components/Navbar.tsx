@@ -21,7 +21,7 @@ const Navbar = () => {
 
           {/* Menu items */}
           <ul className="flex flex-col space-y-7 items-end pr-1">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <li key={item.name} className="relative">
                 <a 
                   href={item.href} 
@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <span className="text-[var(--color-cream-light)] font-bold tracking-wider text-lg">
                 Fikri Rozan
               </span>
@@ -85,7 +85,7 @@ const Navbar = () => {
             
             <div className="container mx-auto px-4 py-6">
               <div className="space-y-1">
-                {navItems.map((item, index) => (
+                {navItems.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}

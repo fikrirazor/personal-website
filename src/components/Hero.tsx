@@ -1,7 +1,6 @@
 import heroBackground from "@/assets/astronomy-1868560_1920.jpg";
 import photoProfile from "@/assets/PhotoProfile.jpg";
 import TypingText from "@/components/ui/shadcn-io/typing-text";
-import { Link } from "react-router";
 import { Particles } from "@/components/ui/shadcn-io/particles";
 import AnimatedContent from "@/components/AnimatedContent";
 import ScrollIndicator from "@/components/ScrollIndicator";
@@ -97,7 +96,7 @@ function Hero() {
         <div className="grid grid-cols-3 text-cream-light">
           {/* Link Portfolio */}
           <div>
-            <Link to="#Portfolio" className="hover:underline">
+            <a href="#portfolio" title="Portfolio" className="hover:underline">
               <TypingText
                 text={["Get a Project", "Get a Project"]}
                 typingSpeed={65}
@@ -108,7 +107,7 @@ function Hero() {
                 textColors={["#b0a9e4", "#dea38b"]}
                 variableSpeed={{ min: 40, max: 110 }}
               />
-            </Link>
+            </a>
           </div>
 
           {/* Scroll Indicator */}
@@ -118,7 +117,7 @@ function Hero() {
 
           {/* Link Contact */}
           <div className="text-right">
-            <Link to="#Contact" className="hover:underline">
+            <a href="#contact" title="contact" className="hover:underline">
               <TypingText
                 text={["Contact", "Contact"]}
                 typingSpeed={65}
@@ -129,7 +128,7 @@ function Hero() {
                 textColors={["#b0a9e4", "#dea38b"]}
                 variableSpeed={{ min: 40, max: 110 }}
               />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

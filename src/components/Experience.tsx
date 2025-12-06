@@ -23,7 +23,7 @@ function Experience() {
   ];
 
   return (
-    <section className="Experience bg-ink">
+    <section id="experience" className=" bg-ink">
       <div className=" max-w-screen-2xl mx-auto px-20 pt-12  ">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/3 flex flex-col justify-center">

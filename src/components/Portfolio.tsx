@@ -94,7 +94,7 @@ function Portfolio() {
   const displayedWorkItems = showAll ? allWorkItems : allWorkItems.slice(0, 3);
 
   return (
-    <section className="Experience bg-ink">
+    <section id="portfolio" className=" bg-ink">
       <div className="max-w-screen-2xl mx-auto py-20 lg:py-32">
         <div className="mx-auto max-w-6xl px-4">
           <h1 className="mb-14 bg-cream-light bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl text-center">

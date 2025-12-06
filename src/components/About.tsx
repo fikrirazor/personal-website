@@ -22,7 +22,7 @@ const coreValues = [
 
 function About() {
   return (
-    <section className="About  bg-ink text-cream-light flex items-center">
+    <section id="about" className="About  bg-ink text-cream-light flex items-center">
       <div className="max-w-screen-2xl mx-auto px-6 pt-16">
         <h1 className="flex flex-col items-center mb-12 mt-5 text-6xl font-extrabold">
           About

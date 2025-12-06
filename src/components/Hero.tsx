@@ -9,7 +9,8 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 function Hero() {
   return (
     <section
-      className="Hero min-h-screen overflow-hidden relative"
+      id="hero"
+      className="min-h-screen overflow-hidden relative"
       style={{
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: "cover",

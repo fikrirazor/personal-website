@@ -78,7 +78,7 @@ function Skills() {
   ];
 
   return (
-    <section className="text-cream-light bg-ink">
+    <section id="skills" className="text-cream-light bg-ink">
       <div className="max-w-screen-2xl mx-auto pt-12 px-4 sm:px-6 lg:px-8 ">
         <h2 className="text-6xl pb-10 font-extrabold text-cream-light mb-8 text-center">
           My Skills

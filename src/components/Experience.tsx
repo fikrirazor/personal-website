@@ -1,14 +1,15 @@
 function Experience() {
   const experienceItems = [
     {
-      title: "Self Employed",
-      company: "JAMAIR GAMES",
-      timeline: "Jan 2021-Feb 2023",
+      title: "Independent Game Developer & Founder",
+      company: "Jamair Games (Self-Employed)",
+      timeline: "January 2021 – February 2023",
       responsibilities: [
-        "Creating a Game Development Document for game requirement purpose.",
-        "Implementing the document using the Godot Engine and GDScript.",
-        "Formulating a scoring system and virtual time system for the game.",
-        "Releasing the game to the Google Play Store.",
+        "Developed and launched three complete indie games from initial concept to publication, handling all aspects including programming, asset creation (2D art and sound), and game design documentation.",
+        "Built Martabak Cooking Game which achieved 1,000+ organic downloads through implementing interactive drag-and-drop systems, dynamic scoring mechanisms, and virtual time functionality for enhanced player experience.",
+        "Created Kancil Mania, a 2D platformer featuring parallax scrolling, enemy behavior patterns, and visual effects including screen-shake, while implementing collision detection and star collection systems.",
+        "Managed the full deployment process to Google Play Store including store listing optimization, asset preparation, and post-launch monitoring for user feedback.",
+        "Designed and developed ABM, an educational math game prototype focusing on intuitive learning through gamified mechanics and responsive visual feedback.",
       ],
     },
     {

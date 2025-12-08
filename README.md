@@ -1,6 +1,6 @@
 # Personal Website
 
-A modern, responsive personal portfolio website built with React, TypeScript, and Tailwind CSS.
+Personal website adalah portfolio website dibangun menggunakan React, Typescript dan Tailwind CSS. 
 
 ## 🌐 Live Demo
 
@@ -22,6 +22,7 @@ A modern, responsive personal portfolio website built with React, TypeScript, an
 - shadcn for UI components
 - Lucide React for icons
 - Vite for build tooling
+- Reactbits
 
 ## 📁 Project Structure
 

@@ -13,7 +13,6 @@ Personal website is portfolio website build with React Vite and Tailwind CSS
 - **Interactive Elements**: Particle background, typing text effects, and scroll animations
 - **Portfolio Showcase**: Project gallery with detailed descriptions
 - **Skills Section**: Organized display of technical skills with icons
-- **Dark Mode Support**: Automatic dark/light mode based on system preference
 
 ## 🛠️ Technologies Used
 

@@ -1,6 +1,6 @@
 # Personal Website
 
-Personal website adalah portfolio website dibangun menggunakan React, Typescript dan Tailwind CSS. 
+Personal website is portfolio website build with React Vite and Tailwind CSS
 
 ## 🌐 Live Demo
 

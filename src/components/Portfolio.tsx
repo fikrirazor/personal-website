@@ -12,19 +12,30 @@ const CardProjects = () => {
   return (
     <div className="relative group">
       <div className="absolute -right-3 -top-3 bg-ink border-2 border-cream-light w-full h-full "></div>
-      <div className="relative border-2 border-cream-light p-6 lg:p-8 text-ink bg-cream-light grid grid-cols-1 lg:grid-rows-auto gap-6 lg:gap-8">
+      <div className="relative border-2 border-cream-light  text-ink bg-cream-light flex flex-col gap-6 ">
+        <div className="relative">
+          <div className="w-full h-full">
+            <img
+              src="/images/pengalaman-memasak.png"
+              alt="pengalaman-memasak"
+            />
+          </div>
+          <div class="inline-block text-xs absolute top-0 right-0 px-3 py-1 bg-ink text-cream-light mt-3 mr-3 rounded-full hover:bg-cream-light hover:text-black transition duration-500 ease-in-out">
+            Full Stack Web Development
+          </div>
+        </div>
         <div className="">
-          <h1 className="text-2xl lg:text-3xl font-bold">Pengalaman Memasak</h1>
+          <h1 className="px-2 text-xl md:text-2xl lg:text-2xl font-bold break-normal ">
+            Pengalaman Memasak
+          </h1>
         </div>
-        <div>
-          <img src="/images/pengalaman-memasak.png" alt="pengalaman-memasak" />
-        </div>
-        <div className="mt-auto pt-4 border-t border-ink/10">
-          <p>asd</p>
+        <div className="mt-auto p-4 border-t border-ink/10">
+          <span className="inline-block px-3 py-1 text-xs font-medium bg-ink text-cream-light rounded-full">
+            Full Stack
+          </span>
         </div>
       </div>
     </div>
-    
   );
 };
 

@@ -1,5 +1,33 @@
 import { useState } from "react";
 
+const ProjectCard = ({ item, index }: { item: WorkItem; index: number }) => {
+  return (
+    <div>
+      <div>asdasdasd</div>
+    </div>
+  );
+};
+
+const CardProjects = () => {
+  return (
+    <div className="relative group">
+      <div className="absolute -right-3 -top-3 bg-ink border-2 border-cream-light w-full h-full "></div>
+      <div className="relative border-2 border-cream-light p-6 lg:p-8 text-ink bg-cream-light grid grid-cols-1 lg:grid-rows-auto gap-6 lg:gap-8">
+        <div className="">
+          <h1 className="text-2xl lg:text-3xl font-bold">Pengalaman Memasak</h1>
+        </div>
+        <div>
+          <img src="/images/pengalaman-memasak.png" alt="pengalaman-memasak" />
+        </div>
+        <div className="mt-auto pt-4 border-t border-ink/10">
+          <p>asd</p>
+        </div>
+      </div>
+    </div>
+    
+  );
+};
+
 function Portfolio() {
   const [showAll, setShowAll] = useState(false);
 
@@ -97,6 +125,7 @@ function Portfolio() {
     <section id="portfolio" className=" bg-ink">
       <div className="max-w-screen-2xl mx-auto py-20 lg:py-32">
         <div className="mx-auto max-w-6xl px-4">
+          {/*Judul*/}
           <h1 className="mb-14 bg-cream-light bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl text-center">
             Portfolio
           </h1>
@@ -117,6 +146,15 @@ function Portfolio() {
                 {showAll ? "Show Less" : "View All Projects"}
               </button>
             </div>
+          </div>
+
+          <div className=" grid grid-cols-3 grid-rows-3 gap-8">
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
           </div>
 
           <div className="space-y-16">
